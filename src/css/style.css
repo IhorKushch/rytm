@@ -1,2 +1,108 @@
 @import "normalize.css";
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: repeat fixed center url("../images/field_base2.jpeg");
+    max-width: 1200px;
+}
 
+.header {
+    text-align: center;
+    text-shadow: 1px 1px gray;
+    padding-left: 1em;
+    margin: 2em auto;
+}
+
+.logo {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 10px;
+    width: 6.5%;
+    margin-left: 20px;
+    opacity: 70%;
+    transition: .5s;
+}
+
+.logo:hover {
+    transform: rotateY(180deg);
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    height: 4rem;
+    background-color: rgba(250, 235, 215, 0.8);
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.menu > li {
+    float: left;
+    height: 2rem;
+    margin-top: 1rem;
+    min-width: 160px;
+    list-style-type: none;
+    text-transform: uppercase;
+    border: black 1px dotted;
+    border-radius: .5rem;
+    text-align: center;
+    line-height: 2rem;
+    margin-right: 4rem;
+    color: wheat;
+    background-color: chocolate;
+    box-shadow: .2rem .2rem silver;
+    transition: transform .5s, background-color 1s;
+}
+
+.menu li:first-child {
+    margin-left: 30px;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    background-color: red;
+    transform: scale(1.2);
+}
+
+.service {
+    display: block;
+    background-color: rgba(250, 235, 215, 0.8);
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.service-list {
+    list-style-type: square;
+}
+
+.service-list li {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+.service-list > li{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.service-list li ul{
+    cursor: default;
+    text-transform: initial;
+}
+.contacts{
+    background-color: dimgray;
+    height: 10rem;
+    width: 1000px;
+    margin: 0 auto;
+    opacity: .9;
+    color: white;
+    padding: 2rem;
+}
+.contacts > div{
+    float: left;
+    width: 30%;
+}
