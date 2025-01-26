@@ -106,3 +106,7 @@ nav {
     float: left;
     width: 30%;
 }
+
+.phones  ul{
+    margin: 0;
+}
